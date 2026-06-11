@@ -3,13 +3,29 @@ export default function Footer() {
     <footer className="w-full bg-gray-900 text-gray-300 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          {/* Company Info */}
           <div>
-            <h4 className="text-white font-bold mb-3 sm:mb-4 text-sm sm:text-base"></h4>
+            <h3 className="text-white text-lg sm:text-xl font-bold mb-3 sm:mb-4">Abadi Farm</h3>
+            <p className="text-sm sm:text-base text-gray-400">
+              Premium chicken breeder dedicated to providing high-quality poultry for farms and businesses.
+            </p>
+          </div>
+
+
+
+          {/* Social Media */}
+          <div>
+            <h4 className="text-white font-bold mb-3 sm:mb-4 text-sm sm:text-base">Follow Us</h4>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="hover:text-secondary transition text-sm sm:text-base"
-              ></a>
+              <a href="#" className="hover:text-secondary transition text-sm sm:text-base">
+                Facebook
+              </a>
+              <a href="#" className="hover:text-secondary transition text-sm sm:text-base">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-secondary transition text-sm sm:text-base">
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
