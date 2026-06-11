@@ -1,21 +1,21 @@
 export default function CTA() {
   return (
-    <section id="contact" className="w-full py-16 px-4 bg-white">
+    <section id="contact" className="w-full py-8 px-4 bg-white">
       <div className="max-w-sm mx-auto text-center">
         {/* Header */}
-        <p className="text-xs font-medium tracking-widest text-gray-400 uppercase mb-3">
+        <p className="text-xs font-medium tracking-widest text-gray-400 uppercase mb-1">
           Abadi Farm
         </p>
-        <h2 className="text-2xl font-semibold text-gray-900 mb-3 leading-snug">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-2 leading-snug">
           Ready to partner with us?
         </h2>
-        <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-xs mx-auto">
+        <p className="text-sm text-gray-500 leading-relaxed mb-4 max-w-xs mx-auto">
           Premium quality chickens delivered to your door. Reach out for a quote
           today.
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-2 justify-center flex-wrap mb-10">
+        <div className="flex gap-2 justify-center flex-wrap mb-4">
           <button className="bg-gray-900 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-700 transition">
             Order chickens
           </button>
@@ -25,7 +25,7 @@ export default function CTA() {
         </div>
 
         {/* Contact info */}
-        <div className="border-t border-gray-100 pt-6 space-y-4 text-left">
+        <div className="border-t border-gray-100 pt-4 space-y-2 text-left">
           {[
             { icon: "📞", label: "Phone", value: "+62 XXX XXXX XXXX" },
             { icon: "📧", label: "Email", value: "info@abadifarm.com" },

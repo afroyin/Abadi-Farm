@@ -16,8 +16,23 @@ export default function Hero() {
           <img
             src="/farm-logo.png"
             alt="Abadi Farm Logo"
-            className="w-48 sm:w-64 md:w-72 h-auto"
+            className="w-48 sm:w-64 md:w-72 h-auto animate-slide-fade"
           />
+          <style>{`
+            @keyframes slide-fade-left {
+              0% {
+                opacity: 0;
+                transform: translateX(-100px);
+              }
+              100% {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            .animate-slide-fade {
+              animation: slide-fade-left 1s ease-out forwards;
+            }
+          `}</style>
         </div>
 
         {/* Heading */}

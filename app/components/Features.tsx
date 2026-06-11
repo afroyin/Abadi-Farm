@@ -16,19 +16,9 @@ export default function Features() {
       description: "All chickens vaccinated for health and productivity.",
     },
     {
-      icon: "🏢",
-      title: "Modern Infrastructure",
-      description: "Professional facilities with optimal conditions.",
-    },
-    {
       icon: "✅",
       title: "Quality Assured",
       description: "Strict quality control — only the best reach your farm.",
-    },
-    {
-      icon: "🚚",
-      title: "Reliable Delivery",
-      description: "Fast, safe delivery in perfect condition.",
     },
   ];
 
