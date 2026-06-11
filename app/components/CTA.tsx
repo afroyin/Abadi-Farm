@@ -1,40 +1,44 @@
 export default function CTA() {
   return (
-    <section id="contact" className="w-full py-12 sm:py-16 md:py-20 bg-gradient-to-r from-primary to-accent px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center w-full">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-          Ready to Partner with Abadi Farm?
+    <section id="contact" className="w-full py-16 px-4 bg-white">
+      <div className="max-w-sm mx-auto text-center">
+        {/* Header */}
+        <p className="text-xs font-medium tracking-widest text-gray-400 uppercase mb-3">
+          Abadi Farm
+        </p>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-3 leading-snug">
+          Ready to partner with us?
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-6 sm:mb-8">
-          Get premium quality chickens delivered to your doorstep. Contact us today for a quote!
+        <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-xs mx-auto">
+          Premium quality chickens delivered to your door. Reach out for a quote
+          today.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
-          <button className="bg-secondary hover:bg-opacity-90 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition transform hover:scale-105 w-full sm:w-auto">
-            Order Chickens
+        {/* Buttons */}
+        <div className="flex gap-2 justify-center flex-wrap mb-10">
+          <button className="bg-gray-900 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-700 transition">
+            Order chickens
           </button>
-          <button className="border-2 border-white text-white hover:bg-white hover:text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition w-full sm:w-auto">
-            Get a Quote
+          <button className="border border-gray-300 text-gray-900 px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+            Get a quote
           </button>
         </div>
 
-        {/* Contact Information */}
-        <div className="bg-white bg-opacity-10 rounded-lg p-6 sm:p-8 backdrop-blur-sm">
-          <h3 className="text-2xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Contact Information</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-white">
-            <div>
-              <p className="text-gray-200 mb-2 text-sm sm:text-base">📞 Phone</p>
-              <p className="text-base sm:text-lg font-semibold">+62 XXX XXXX XXXX</p>
+        {/* Contact info */}
+        <div className="border-t border-gray-100 pt-6 space-y-4 text-left">
+          {[
+            { icon: "📞", label: "Phone", value: "+62 XXX XXXX XXXX" },
+            { icon: "📧", label: "Email", value: "info@abadifarm.com" },
+            { icon: "📍", label: "Location", value: "Abadi Farm, Indonesia" },
+          ].map(({ icon, label, value }) => (
+            <div key={label} className="flex items-start gap-3">
+              <span className="text-lg mt-0.5">{icon}</span>
+              <div>
+                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
+                <p className="text-sm font-medium text-gray-900">{value}</p>
+              </div>
             </div>
-            <div>
-              <p className="text-gray-200 mb-2 text-sm sm:text-base">📧 Email</p>
-              <p className="text-base sm:text-lg font-semibold break-all">info@abadifarm.com</p>
-            </div>
-            <div>
-              <p className="text-gray-200 mb-2 text-sm sm:text-base">📍 Location</p>
-              <p className="text-base sm:text-lg font-semibold">Abadi Farm, Indonesia</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
