@@ -26,11 +26,7 @@ export default function CTA() {
 
         {/* Contact info */}
         <div className="border-t border-gray-100 pt-4 space-y-2 text-left">
-          {[
-            { icon: "📞", label: "Phone", value: "+62 XXX XXXX XXXX" },
-            { icon: "📧", label: "Email", value: "info@abadifarm.com" },
-            { icon: "📍", label: "Location", value: "Abadi Farm, Indonesia" },
-          ].map(({ icon, label, value }) => (
+          {[].map(({ icon, label, value }) => (
             <div key={label} className="flex items-start gap-3">
               <span className="text-lg mt-0.5">{icon}</span>
               <div>
