@@ -23,8 +23,8 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="w-full py-10 bg-gray-50 px-4">
-      <div className="max-w-md mx-auto">
+    <section id="features" className=" w-fit py-10 bg-gray-50 px-4">
+      <div className="max-w-md mx-auto text-justify max-w-fit-content">
         {/* Header */}
         <div className="text-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-900 mb-1">

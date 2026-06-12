@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
-      style={{ backgroundColor: "#C2B280" }}
+      className="relative min-h-screen w-full flex items-top justify-top px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
+      style={{ backgroundColor: "#EDEBD3" }}
     >
       <div className="max-w-6xl mx-auto text-center w-full">
         {/* Logo */}
@@ -30,18 +30,18 @@ export default function Hero() {
               }
             }
             .animate-slide-fade {
-              animation: slide-fade-left 1s ease-out forwards;
+              animation: slide-fade-left 1.5s ease-out forwards; animation-iteration-count: infinite;
             }
           `}</style>
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-          Premium Chicken Breeder
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-green-700 mb-4 sm:mb-6 leading-tight">
+          Ayam Kampung Berkualitas, Perawatan Terbaik
         </h2>
 
         {/* Subtext */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-yellow-700 mb-6 sm:mb-8 max-w-2xl mx-auto">
           Abadi Farm specializes in breeding and supplying high-quality chickens
           of various sizes and ages. Every bird is vaccinated and raised with
           professional farm infrastructure.
@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <Link
             href={GALLERY_URL}
-            className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition w-full sm:w-auto text-center"
+            className="border-2 border-white text-green-800 hover:bg-white hover:text-green-500 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition w-full sm:w-auto text-center"
           >
             View Our Chickens
           </Link>
@@ -60,7 +60,7 @@ export default function Hero() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition w-full sm:w-auto text-center"
+            className="border-2 border-white text-green-800 hover:bg-white hover:text-green-500 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-lg transition w-full sm:w-auto text-center"
           >
             Contact Us
           </a>
